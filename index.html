@@ -16,35 +16,56 @@
         }
         .profile-container {
             background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            width: 300px;
-            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            width: 320px;
+            padding: 25px;
             text-align: center;
+            transition: transform 0.3s;
+        }
+        .profile-container:hover {
+            transform: scale(1.05);
         }
         .profile-picture {
-            width: 100px;
-            height: 100px;
+            width: 120px;
+            height: 120px;
             border-radius: 50%;
             object-fit: cover;
+            border: 3px solid #f0f2f5;
         }
         .profile-name {
-            font-size: 24px;
+            font-size: 26px;
             font-weight: bold;
-            margin: 10px 0;
+            margin: 15px 0;
         }
         .profile-bio {
-            font-size: 14px;
+            font-size: 16px;
             color: #666;
-            margin: 10px 0;
+            margin: 15px 0;
         }
         .profile-info {
-            font-size: 14px;
+            font-size: 15px;
             color: #333;
             margin: 10px 0;
         }
         .profile-info span {
             font-weight: bold;
+        }
+        .profile-button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 15px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+        .profile-button:hover {
+            background-color: #0056b3;
         }
     </style>
 </head>
@@ -52,11 +73,12 @@
     <div class="profile-container">
         <img src="luxpic.png" alt="Profile Picture" class="profile-picture">
         <div class="profile-name">Luxanna Crownguard</div>
-        <div class="profile-bio">Blonde | Protector of Damacia | Wello's Main</div>
+        <div class="profile-bio">Blonde | Protector of Demacia | Wello's Main</div>
         <div class="profile-info">
-            <p><span>Location:</span> Damacia, Runeterra</p>
+            <p><span>Location:</span> Demacia, Runeterra</p>
             <p><span>Interests:</span> Light</p>
         </div>
+        <a href="https://example.com" class="profile-button">See More</a>
     </div>
 </body>
 </html>
